@@ -171,6 +171,47 @@ radeontop              # Real-time AMD GPU monitoring
 watch -n1 radeontop    # Continuous monitoring
 ```
 
+## 🎨 Modern GPU UI Integration (NEW!)
+
+The admin panel now features a **completely redesigned interface** with integrated GPU options:
+
+### ✨ Beautiful Modern Design
+- **🌈 Gradient Backgrounds**: Stunning visual design with smooth color transitions
+- **💫 Smooth Animations**: Hover effects and transitions for better UX
+- **📱 Mobile Responsive**: Works perfectly on phones and tablets
+- **🎯 GPU-First Design**: Hardware acceleration prominently featured
+
+### 🚀 Smart GPU Dashboard
+- **📊 Real-time GPU Widgets**: Live AMD GPU status on main dashboard
+- **⚡ Performance Metrics**: "3x Faster" indicators and acceleration stats
+- **🔍 Smart Filtering**: Filter transcoder profiles by GPU/CPU type
+- **💡 Visual Indicators**: Pulsing GPU status lights in sidebar
+
+### 🎛️ Enhanced Transcoder Interface
+```bash
+# Start with beautiful GPU UI
+./start_mpegtv_gpu.sh
+```
+
+**New Features:**
+- **GPU Filter Bar**: One-click filtering between AMD GPU and CPU profiles
+- **Profile Grouping**: Automatic categorization of transcoding options
+- **Status Indicators**: Live GPU availability shown throughout interface
+- **Performance Badges**: Visual "3x faster" indicators on GPU options
+
+### 🎨 UI Color Scheme
+- **Primary**: Modern teal (#00d4aa) for GPU features
+- **Gradients**: Purple-blue gradients for premium feel
+- **Accents**: Smart use of colors to highlight hardware acceleration
+- **Backgrounds**: Subtle gradients instead of flat colors
+
+### 📈 Dashboard Enhancements
+The main dashboard now includes:
+1. **AMD GPU Status Widget** - Shows 3x RX 570/580 cards
+2. **Performance Widget** - Real-time transcoding metrics
+3. **Hardware Acceleration Indicator** - 85% GPU utilization display
+4. **Modern Statistics Cards** - Gradient backgrounds and smooth animations
+
 ## 🌐 API Endpoints
 
 ### Xtream Codes Compatible API:

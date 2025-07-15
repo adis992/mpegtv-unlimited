@@ -912,3 +912,98 @@ text-align: left; color: #eee; padding: 0px 5px; font-size: 11px; height:21px; c
 	text-shadow: 1px 3px 0 #969696, 1px 5px 5px #aba8a8;
 }
 
+
+/* === GPU UI ENHANCEMENTS === */
+/* === MODERN GPU TRANSCODING UI === */
+:root {
+    --gpu-primary: #00d4aa;
+    --gpu-secondary: #1a1a2e;
+    --gpu-accent: #16213e;
+    --gpu-success: #00c851;
+    --gpu-warning: #ff8800;
+    --gpu-danger: #ff4444;
+    --gpu-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Sidebar modernization */
+.sidebar {
+    background: var(--gpu-secondary) !important;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-nav li a {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 2px 8px;
+}
+
+.sidebar-nav li a:hover {
+    background: var(--gpu-primary) !important;
+    transform: translateX(5px);
+}
+
+.sidebar-nav li a.active {
+    background: var(--gpu-gradient) !important;
+}
+
+/* GPU Status Cards */
+.gpu-status-card {
+    background: var(--gpu-gradient);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    margin: 10px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.gpu-transcoder-option {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gpu-transcoder-option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Modern table styling */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.table th {
+    background: var(--gpu-gradient);
+    color: white;
+    font-weight: 600;
+}
+
+/* Content wrapper modernization */
+.content-wrapper {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* GPU indicator */
+.gpu-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--gpu-success);
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
