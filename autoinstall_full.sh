@@ -82,6 +82,16 @@ cd /var/mpegtv
 sleep 5
 
 echo ""
+echo "🔥 Setting up AMD GPU transcoding (optional)..."
+if lspci | grep -q -i "VGA.*AMD\|Display.*AMD"; then
+    echo "✅ AMD GPU detected! Installing GPU transcoding support..."
+    chmod +x setup_amd_gpu_transcoding.sh 2>/dev/null || true
+    ./setup_amd_gpu_transcoding.sh 2>/dev/null || echo "⚠️ GPU setup skipped"
+else
+    echo "ℹ️ No AMD GPU detected, skipping GPU transcoding setup"
+fi
+
+echo ""
 echo "✅ Installation completed successfully!"
 echo ""
 echo "=========================================="
@@ -110,6 +120,7 @@ echo "   ✅ MAG device support"
 echo "   ✅ Xtream Codes API"
 echo "   ✅ EPG support"
 echo "   ✅ Load balancer support"
+echo "   ✅ AMD GPU transcoding (if detected)"
 echo ""
 echo "🔥 ENJOY YOUR FREE IPTV PANEL!"
 echo "=========================================="

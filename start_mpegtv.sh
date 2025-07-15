@@ -10,6 +10,11 @@ sudo systemctl start mysql
 
 echo "Starting MpegTV with unlimited license..."
 
+# Set GPU environment variables for better performance
+export AMD_VULKAN_ICD=RADV
+export GPU_MAX_HEAP_SIZE=100
+export GPU_MAX_ALLOC_PERCENT=100
+
 # Start MpegTV (now permanently patched for unlimited license)
 cd /var/mpegtv
 sudo /usr/local/bin/mpegtv &

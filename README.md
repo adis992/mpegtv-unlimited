@@ -16,6 +16,7 @@
 - ✅ **Xtream Codes API** - 100% compatible
 - ✅ **EPG Support** - Electronic Program Guide
 - ✅ **Load Balancer** - Multiple server support
+- ✅ **AMD GPU Transcoding** - Hardware acceleration support
 - ✅ **MySQL Database** - Robust data storage
 - ✅ **Web Panel** - Easy management interface
 
@@ -104,6 +105,38 @@ MYSQL DATABASE: mpegtv
 
 ### Change Web Port:
 Edit `/var/mpegtv/mpegtv.cfg` and restart MpegTV.
+
+## 🔥 AMD GPU Transcoding
+
+This panel includes **automatic AMD GPU hardware transcoding** for 5-10x faster encoding!
+
+### Supported AMD GPUs:
+- RX 400/500 series (Polaris)
+- RX 5000 series (RDNA1) 
+- RX 6000 series (RDNA2)
+- RX 7000 series (RDNA3)
+
+### GPU Setup:
+```bash
+# Automatic setup during installation
+sudo ./autoinstall_full.sh
+
+# Manual GPU setup
+sudo ./setup_amd_gpu_transcoding.sh
+```
+
+### Available GPU Profiles:
+- **AMD GPU H.264 720p** - Fast 720p encoding
+- **AMD GPU H.264 1080p** - Fast 1080p encoding  
+- **AMD GPU H.265 720p** - Efficient 720p HEVC
+- **AMD GPU H.265 1080p** - Efficient 1080p HEVC
+- **AMD OpenCL H.264** - Universal OpenCL encoding
+
+### Monitor GPU Usage:
+```bash
+radeontop              # Real-time AMD GPU monitoring
+watch -n1 radeontop    # Continuous monitoring
+```
 
 ## 🌐 API Endpoints
 
