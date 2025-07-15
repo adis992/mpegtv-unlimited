@@ -1,0 +1,135 @@
+/* GPU Transcoding UI Enhancements for MpegTV Admin Panel */
+
+/* GPU Section Styling */
+.gpu-transcoding-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    padding: 15px !important;
+    margin: 10px 0 !important;
+    border-radius: 8px !important;
+    border: 2px solid #4a90e2 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+    animation: slideInFromRight 0.5s ease-out;
+}
+
+.gpu-transcoding-section h3 {
+    color: white !important;
+    margin: 0 0 10px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.gpu-profile-selection {
+    background: rgba(255,255,255,0.1) !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+.gpu-checkbox-label {
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+    font-weight: bold !important;
+}
+
+.gpu-checkbox {
+    margin-right: 8px !important;
+    transform: scale(1.2) !important;
+}
+
+.gpu-select {
+    width: 100% !important;
+    padding: 5px !important;
+    border-radius: 3px !important;
+    border: 1px solid #ccc !important;
+    background: white !important;
+}
+
+.gpu-status-info {
+    background: rgba(255,255,255,0.1) !important;
+    padding: 8px !important;
+    border-radius: 3px !important;
+    font-size: 12px !important;
+    color: #e8f4f8 !important;
+}
+
+/* Enhanced dropdown styling for GPU profiles */
+optgroup[label*="GPU"] {
+    background: linear-gradient(90deg, #00aa00, #0066cc) !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+optgroup[label*="GPU"] option {
+    background: #f8f9fa !important;
+    color: #00aa00 !important;
+    font-weight: bold !important;
+    padding: 5px !important;
+}
+
+/* Animation for GPU section */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* GPU status indicator */
+.gpu-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #00ff00;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    margin-right: 5px;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+}
+
+/* Form enhancements */
+form[data-gpu-enhanced="true"] {
+    position: relative;
+}
+
+form[data-gpu-enhanced="true"]:before {
+    content: "🚀 GPU Enhanced";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #28a745;
+    color: white;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gpu-transcoding-section {
+        margin: 5px 0 !important;
+        padding: 10px !important;
+    }
+    
+    .gpu-transcoding-section h3 {
+        font-size: 14px !important;
+    }
+}

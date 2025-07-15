@@ -132,6 +132,39 @@ sudo ./setup_amd_gpu_transcoding.sh
 - **AMD GPU H.265 1080p** - Efficient 1080p HEVC
 - **AMD OpenCL H.264** - Universal OpenCL encoding
 
+### 🎨 Enhanced Admin Interface
+
+The admin panel now includes **GPU transcoding UI enhancements**:
+
+#### Start with GPU UI:
+```bash
+./start_mpegtv_gpu.sh    # Starts with GPU UI enhancements
+```
+
+#### GPU Features in Admin Panel:
+- **✅ GPU Enable Checkbox** - Easy one-click GPU activation
+- **🎯 Profile Selection Dropdown** - Choose specific GPU profile
+- **📊 Real-time GPU Status** - Shows detected AMD GPUs
+- **⚡ Performance Indicators** - Displays "3x faster" badges
+- **🎨 Visual Enhancements** - Beautiful gradient backgrounds for GPU sections
+
+#### How to Use GPU Transcoding:
+1. Login to admin panel: http://localhost:8080 (admin/admin)
+2. Go to **Streams** or **Channels** section
+3. When creating/editing a stream:
+   - Check **"Enable GPU Acceleration"** ✅
+   - Select desired GPU profile from dropdown
+   - Save configuration
+4. GPU transcoding will automatically activate for that stream
+
+#### GPU Profile Descriptions:
+- **AMD GPU H.264 720p**: Best for fast streaming, lower CPU usage
+- **AMD GPU H.264 1080p**: High quality full HD, hardware optimized  
+- **AMD GPU H.265 720p**: Better compression, saves bandwidth
+- **AMD GPU H.265 1080p**: Maximum quality with H.265 efficiency
+- **AMD OpenCL H.264**: Cross-platform OpenCL acceleration
+- **AMD VAAPI H.264**: Linux-optimized Video Acceleration API
+
 ### Monitor GPU Usage:
 ```bash
 radeontop              # Real-time AMD GPU monitoring

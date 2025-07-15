@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "=========================================="
-echo "🚀 GITHUB PUSH SCRIPT"  
+echo "🚀 ENHANCED MPEGTV WITH GPU UI - GITHUB PUSH"  
 echo "=========================================="
 
 # Check if URL is provided
