@@ -36,7 +36,7 @@ MpegTV is a professional IPTV streaming panel written in C with:
 ### One-Line Install (Ubuntu/Debian):
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mpegtv-unlimited.git
+git clone https://github.com/adis992/mpegtv-unlimited.git
 cd mpegtv-unlimited
 sudo ./autoinstall_full.sh
 ```
@@ -45,7 +45,7 @@ sudo ./autoinstall_full.sh
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/mpegtv-unlimited.git
+   git clone https://github.com/adis992/mpegtv-unlimited.git
    cd mpegtv-unlimited
    ```
 
@@ -200,8 +200,8 @@ This project is for educational purposes only. The original MpegTV software is c
 
 ## 📞 Support
 
-- 🐛 **Issues:** [GitHub Issues](https://github.com/YOUR_USERNAME/mpegtv-unlimited/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/YOUR_USERNAME/mpegtv-unlimited/discussions)
+- 🐛 **Issues:** [GitHub Issues](https://github.com/adis992/mpegtv-unlimited/issues)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/adis992/mpegtv-unlimited/discussions)
 
 ## ⭐ Star this repo if it helped you!
 
