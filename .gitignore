@@ -1,0 +1,64 @@
+# MpegTV IPTV Panel .gitignore
+
+# Backup files
+*.backup
+*.bak
+*.orig
+*~
+
+# Log files
+*.log
+logs/
+
+# Database files
+*.sql
+*.db
+*.sqlite
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Configuration files with sensitive data
+config.ini
+database.conf
+secrets.txt
+
+# Archive files
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cookies and session files
+cookies.txt
+sessions/
+
+# Large binary downloads
+mpegtv-data.tgz*
+GeoLite2-*.csv
+IpToCountry.csv
+
+# Runtime files
+*.pid
+*.lock
+
+# MySQL files
+*.cnf
+mysql-bin.*
